@@ -28,8 +28,16 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 30.0,
                     color: Colors.white,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Ballet'),
               ),
+              Text("Flutter Developer",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: const Color.fromARGB(255, 49, 46, 46),
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Quicksand',
+                      letterSpacing: 3.5)),
             ],
           ),
         )),

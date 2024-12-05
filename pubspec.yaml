@@ -54,6 +54,14 @@ dev_dependencies:
 flutter:
   assets:
     - images/myphoto.png
+  fonts:
+    - family: Ballet
+      fonts:
+        - asset: fonts/Ballet-Regular-VariableFont_opsz.ttf
+
+    - family: Quicksand
+      fonts:
+        - asset: fonts/Quicksand-VariableFont_wght.ttf
 
   # The following line ensures that the Material Icons font is
 
