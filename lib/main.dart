@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -14,57 +14,25 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              // En soldaki şekil
-              Container(
-                width: 100,
-                color: Colors.red,
-                child: Center(
-                  child: Text('Sol'),
-                ),
+            child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundColor: Colors.red,
+                backgroundImage: AssetImage('images/myphoto.png'),
               ),
-              // Ortadaki alt alta gelen şekiller
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.yellow,
-                      child: Center(
-                        child: Text('Üst'),
-                      ),
-                    ),
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.green,
-                      child: Center(
-                        child: Text('Alt',
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                            )),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              // En sağdaki şekil
-              Container(
-                width: 100,
-                color: Colors.blue,
-                child: Center(
-                  child: Text('Sağ'),
-                ),
+              Text(
+                "Ekin Cem Falcioglu",
+                style: TextStyle(
+                    fontSize: 30.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
               ),
             ],
           ),
-        ),
+        )),
       ),
     );
   }
